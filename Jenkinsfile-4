@@ -1,9 +1,7 @@
 pipeline {
   agent {
   label 'DANISH_MACHINE'}
-  options {
-    timeout(time: 30, unit: 'SECONDS') 
-  }
+
   stages {
     stage('input') {
       agent  { label 'DANISH_MACHINE'}
